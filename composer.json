@@ -1,0 +1,23 @@
+{
+    "name": "wtwt/yii2-websocket",
+    "description": "使用yii2封装 websocket 扩展",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","websocket","swoole"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "gengxiankun",
+            "email": "gengxiankun@126.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "wtwt\\websocket\\": "src",
+            "wtwt\\websocket\\swoole\\": "src/drivers/swoole",
+            "wtwt\\websocket\\workerman\\": "src/drivers/workerman"
+        }
+    }
+}
